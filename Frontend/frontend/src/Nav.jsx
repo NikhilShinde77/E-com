@@ -5,12 +5,11 @@ const Nav=()=>{
     <div>
       <ul className='nav'>
        
-        <li><Link to="/pro">Products</Link></li>
+        <li><Link to="/pro">Products List</Link></li>
         <li><Link to="/add">Add Product</Link></li>
         <li><Link to="/update">Update Product</Link></li>
+       <li><Link to="/delete">Delete Product</Link></li>
       
-        <li><Link to="/logout">Logout</Link></li>
-        <li><Link to="/profile">Profile</Link></li>
 
 
       </ul>

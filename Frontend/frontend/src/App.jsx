@@ -1,9 +1,14 @@
 import React from 'react';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import  './App.css';
-
-
 import Nav from './Nav';
+import Product from './com/Product.jsx';
+import Add from './com/Add.jsx';
+import Delete from './com/Delete.jsx';
+import Update from './com/Update.jsx';
+
+
+
 
 function App(){
   return(
@@ -12,12 +17,12 @@ function App(){
       <BrowserRouter>
      <Nav/>
       <Routes>
+        <Route path='/pro' element={<Product/>} />
+        <Route path='/add' element={<Add/>} />
+        <Route path='/update' element={<Update/>} />
+        <Route path='/delete' element={<Delete/>} />
        
-        <Route path='/pro' element={<h1>Products</h1>} />
-        <Route path='/add' element={<h1>Add Product</h1>} />
-        <Route path='/update' element={<h1>Update Product</h1>} />
-        <Route path='/logout' element={<h1>Logout</h1>} />
-        <Route path='/profile' element={<h1>Profile</h1>} />
+       
       </Routes>
       
       </BrowserRouter>
